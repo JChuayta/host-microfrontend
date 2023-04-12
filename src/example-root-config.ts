@@ -19,6 +19,11 @@ registerApplication({
   app: () => System.import<LifeCycles>("@example/mf-footer"),
   activeWhen: ["/"],
 });
+registerApplication({
+  name: "@example/home-react",
+  app: () => System.import<LifeCycles>("@example/home-react"),
+  activeWhen: ["/home"],
+});
 
 start({
   urlRerouteOnly: true,
